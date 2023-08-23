@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Style
 import "./header.css";
 
@@ -9,7 +10,9 @@ const Header = () => {
     <div className="header">
       <div className="content">
         <FaBars />
-        <p className="headerTitle">Cardapio</p>
+        <Link to="/">
+          <p className="headerTitle">Cardapio</p>
+        </Link>
       </div>
       <FaSistrix />
     </div>
