@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header">
       <div className="content">
         <FaBars />
-        <Link to="/">
+        <Link className="headerLink" to="/">
           <p className="headerTitle">Cardapio</p>
         </Link>
       </div>

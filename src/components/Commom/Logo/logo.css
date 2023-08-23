@@ -3,6 +3,9 @@
   display: flex;
   justify-content: center;
 }
+.logoLink {
+  text-decoration: none;
+}
 .logo {
   width: 200px;
   height: 60px;
