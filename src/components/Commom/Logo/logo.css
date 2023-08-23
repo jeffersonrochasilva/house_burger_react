@@ -1,0 +1,28 @@
+.logoContainer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 200px;
+  height: 60px;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  margin: 30px;
+}
+.logoMaior {
+  color: white;
+  font-size: 23px;
+  padding: 0;
+  margin: 0;
+}
+.logoMenor {
+  color: white;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}

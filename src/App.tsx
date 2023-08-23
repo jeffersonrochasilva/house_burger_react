@@ -3,12 +3,24 @@ import "./App.css";
 
 // reaproveitamento de estrutura
 import { Outlet } from "react-router-dom";
-import Navbar from "./components/Commom/Navbar.tsx";
+// import Navbar from "./components/Commom/Navbar.tsx";
+import Header from "./components/Commom/Header";
+import Logo from "./components/Commom/Logo";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <h1>Casa do Hamburguer</h1>
+      {/* <Navbar /> */}
+      <Header />
+      {/* <h1
+        style={{
+          fontFamily: "sans-serif",
+          fontSize: 18,
+          margin: 30,
+        }}
+      >
+        Casa do Hamburguer
+      </h1> */}
+      <Logo />
       <Outlet />
     </div>
   );

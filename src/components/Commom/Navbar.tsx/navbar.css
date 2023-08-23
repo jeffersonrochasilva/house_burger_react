@@ -1,0 +1,9 @@
+.navbarContainer {
+  background-color: red;
+  height: 60px;
+  align-items: center;
+}
+.togo {
+  color: white;
+  text-decoration: none;
+}
