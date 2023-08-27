@@ -1,5 +1,5 @@
 // Components
-import CardsBurguers from "../../../components/Commom/CardsBurguers";
+import { CardsBurguers } from "../../../components/Commom/CardsBurguers";
 
 // images
 import caipirinha_de_limao from "../../../assets/drinks/caipirinha-de-limao.jpg";
@@ -20,31 +20,31 @@ const Drinks = () => {
       <CardsBurguers
         image={drink_morango}
         value="22,90"
-        description="Caipirinha de Morango com vodica"
+        description={["Caipirinha", "de", "Morango", "com", "vodica"]}
         title="Caipirinha de Morango"
       />
       <CardsBurguers
         image={caipirinha_de_limao}
         value="45,90"
-        description="Caipirinha de limão com vodica"
+        description={["Caipirinha", "de", "Morango", "com", "vodica"]}
         title="Caipirinha"
       />
       <CardsBurguers
         image={drink_azul}
         value="46,90"
-        description="Caipirinha de limão com vodica"
+        description={["Caipirinha", "de", "Morango", "com", "vodica"]}
         title="Drink Lagoa Azul"
       />
       <CardsBurguers
         image={drink_gin}
         value="28,90"
-        description="Gin com agua tonica"
+        description={["Caipirinha", "de", "Morango", "com", "vodica"]}
         title="Drink Gin"
       />
       <CardsBurguers
         image={drink_maracuja}
         value="78,90"
-        description="drink de maracujá"
+        description={["Caipirinha", "de", "Morango", "com", "vodica"]}
         title="Drink Maracujá"
       />
     </div>

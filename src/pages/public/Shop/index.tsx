@@ -2,7 +2,7 @@
 import shop from "../../../assets/shop/shop.jpeg";
 
 // Components
-import CardsBurguers from "../../../components/Commom/CardsBurguers";
+import {CardsBurguers} from "../../../components/Commom/CardsBurguers";
 const Shop = () => {
   return (
     <div>
@@ -15,7 +15,7 @@ const Shop = () => {
       </h1>
       <CardsBurguers
         value="10,00"
-        description="shop heineken"
+        description={["shop heineken"]}
         image={shop}
         title="Shop Heineken"
       />

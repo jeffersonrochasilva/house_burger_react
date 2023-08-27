@@ -5,7 +5,7 @@ import fejoada_grande from "../../../assets/refeicoes/fejoada_grande.webp";
 import frango_parmejiana from "../../../assets/refeicoes/frango_parmejiana.png";
 
 // Components
-import CardsBurguers from "../../../components/Commom/CardsBurguers";
+import { CardsBurguers } from "../../../components/Commom/CardsBurguers";
 const Meals = () => {
   return (
     <div>
@@ -19,25 +19,25 @@ const Meals = () => {
       <CardsBurguers
         image={fejoada}
         value="35,00"
-        description="Fejoada Pequena"
+        description={["Fejoada", "Pequena"]}
         title="Fejoada Pequena"
       />
       <CardsBurguers
         image={fejoada_media}
         value="65,00"
-        description="Fejoada Media"
+        description={["Fejoada", "Media"]}
         title="Fejoada Media"
       />{" "}
       <CardsBurguers
         image={fejoada_grande}
         value="85,00"
-        description="Fejoada Grande"
+        description={["Fejoada", "Grande"]}
         title="Fejoada Grande"
       />
       <CardsBurguers
         image={frango_parmejiana}
         value="25,90"
-        description="Frango Parmejiana"
+        description={["Frango", "Parmejiana"]}
         title="Frango Parmejiana"
       />
     </div>

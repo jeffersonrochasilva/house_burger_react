@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./refrigerator.css";
 
-import agua from "../../../assets/bebidas/agua.webp";
-import cerveja from "../../../assets/bebidas/cerveja_long_neck.png";
-import delvale from "../../../assets/bebidas/delvale_suco.jpeg";
-import guarana_antartica from "../../../assets/bebidas/guarana_antartica.jpeg";
-import refrigerantes from "../../../assets/bebidas/refrigerantes.jpeg";
-
-import CardsBurguers from "../../../components/Commom/CardsBurguers";
+import { CardsBurguers } from "../../../components/Commom/CardsBurguers";
 
 import coca_zero from "../../../assets/refrigerantes/coca_zero.png";
 import coca_cola from "../../../assets/refrigerantes/coca_cola.jpg";
@@ -21,49 +15,49 @@ const Refrigerator = () => {
     {
       image: coca_zero,
       title: "Coca Zero",
-      description: "350 ml",
+      description: ["350 ml"],
       value: "4,50",
       id: 1,
     },
     {
       image: coca_cola,
       title: "Coca Cola",
-      description: "280 ml",
+      description: ["280 ml"],
       value: "3,20",
       id: 2,
     },
     {
       image: fanta_laranje,
       title: "Fanta Laranja",
-      description: "280 ml",
+      description: ["280 ml"],
       value: "3,50",
       id: 3,
     },
     {
       image: fanta_uva,
       title: "Fanta Uva",
-      description: "280 ml",
+      description: ["280 ml"],
       value: "3,50",
       id: 4,
     },
     {
       image: guarana_jesus,
       title: "Guaraná Jesus",
-      description: "280 ml",
+      description: ["280 ml"],
       value: "3,50",
       id: 5,
     },
     {
       image: pepsi_zero,
       title: "Pepsi Zero",
-      description: "350 ml",
+      description: ["350 ml"],
       value: "4,555",
       id: 6,
     },
     {
       image: pepsi,
       title: "Pepsi",
-      description: "350 ml",
+      description: ["350 ml"],
       value: "4,00",
       id: 7,
     },

@@ -5,6 +5,7 @@ import "./header.css";
 
 // Icons
 import { FaBars, FaSistrix } from "react-icons/fa";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 const Header = () => {
   return (
     <div className="header">
@@ -14,7 +15,23 @@ const Header = () => {
           <p className="headerTitle">Cardapio</p>
         </Link>
       </div>
-      <FaSistrix />
+      {/* <FaSistrix /> */}
+      <div>
+        <AiOutlineShoppingCart
+          style={{
+            fontSize: 25,
+          }}
+        />
+        <div className="itemsInBox">
+          <span
+            style={{
+              fontSize: 10,
+            }}
+          >
+            2
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,14 @@
 import React from "react";
+import { useRecoilState } from "recoil";
+import { countState } from "../store/state";
 // Style
 import "./Home.css";
+
 // Components
 import Cards from "../components/Commom/Cards";
+
 const Home = () => {
+  const [shoppingCart, setShoppingCart] = useRecoilState(countState);
   return (
     <div
       style={{

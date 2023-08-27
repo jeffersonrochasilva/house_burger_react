@@ -2,13 +2,16 @@
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 
-import Hamburger from "../pages/Private/Hamburger";
-import Combos from "../pages/Private/Combos";
-import Drinks from "../pages/Private/Drinks";
-import Meals from "../pages/Private/Meals";
-import Promotions from "../pages/Private/Promotions";
-import Refrigerator from "../pages/Private/Refrigerator";
-import Shop from "../pages/Private/Shop";
+import Hamburger from "../pages/public/Hamburger";
+import Combos from "../pages/public/Combos";
+import Drinks from "../pages/public/Drinks";
+import Meals from "../pages/public/Meals";
+import Promotions from "../pages/public/Promotions";
+import Refrigerator from "../pages/public/Refrigerator";
+import Shop from "../pages/public/Shop";
+import SelectItem from "../pages/public/SelectItem";
+
+// Sub pages
 
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
@@ -53,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "shop",
         element: <Shop />,
+      },
+      {
+        path: "selectItem",
+        element: <SelectItem />,
       },
     ],
   },
