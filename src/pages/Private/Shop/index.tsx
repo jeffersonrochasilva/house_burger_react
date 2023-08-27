@@ -11,7 +11,7 @@ const Shop = () => {
           marginTop: 0,
         }}
       >
-        Shop
+        Chopp
       </h1>
       <CardsBurguers
         value="10,00"
