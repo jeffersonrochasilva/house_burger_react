@@ -1,4 +1,3 @@
-import React from "react";
 import "./cardsBurgues.css";
 import { Link } from "react-router-dom";
 
@@ -8,11 +7,11 @@ import { values } from "../../../store/state";
 
 const CardsBurguers = (props: {
   image?: any;
-  title?: string | undefined;
-  value?: string | undefined;
-  description?: string[] | undefined;
+  title?: string;
+  value?: string;
+  description?: string[];
   item?: any;
-  toGoRoute?: string | undefined;
+  toGoRoute?: string;
 }) => {
   const setSelectItem = useSetRecoilState(values);
 

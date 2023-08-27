@@ -10,6 +10,7 @@ import fanta_uva from "../../../assets/refrigerantes/fanta_uva.webp";
 import guarana_jesus from "../../../assets/refrigerantes/guarana_jesus.webp";
 import pepsi_zero from "../../../assets/refrigerantes/pepsi_zero.jpeg";
 import pepsi from "../../../assets/refrigerantes/pepsi.webp";
+
 const Refrigerator = () => {
   const [data] = useState([
     {
