@@ -27,7 +27,7 @@ const Cards = (props: { title: string; route: any }) => {
         {props.title === "Promoções" && (
           <FaDollarSign style={{ color: "#303030", fontSize: 60 }} />
         )}
-        {props.title === "Shop" && (
+        {props.title === "Chopp" && (
           <IoMdBeer style={{ color: "#303030", fontSize: 60 }} />
         )}
         {props.title === "Combos" && (

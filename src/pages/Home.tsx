@@ -22,7 +22,7 @@ const Home = () => {
       <Cards title="Hamburger" route="hamburger" />
       <Cards title="Refeições" route="meals" />
       <Cards title="Refrigerantes" route="refrigerator" />
-      <Cards title="Shop" route="shop" />
+      <Cards title="Chopp" route="shop" />
       <Cards title="Drinks" route="drinks" />
     </div>
   );

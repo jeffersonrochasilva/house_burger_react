@@ -2,7 +2,7 @@
 import shop from "../../../assets/shop/shop.jpeg";
 
 // Components
-import {CardsBurguers} from "../../../components/Commom/CardsBurguers";
+import { CardsBurguers } from "../../../components/Commom/CardsBurguers";
 const Shop = () => {
   return (
     <div>
@@ -11,7 +11,7 @@ const Shop = () => {
           marginTop: 0,
         }}
       >
-        Shop
+        Chopp
       </h1>
       <CardsBurguers
         value="10,00"
