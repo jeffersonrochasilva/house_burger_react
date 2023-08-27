@@ -65,12 +65,12 @@ const Refrigerator = () => {
   ]);
   const list = data.map((item) => (
     <div key={item.id}>
-      <CardsBurguers
+      {/* <CardsBurguers
         image={item.image}
         title={item.title}
         value={item.value}
-        description={item.description}
-      />
+        options={item.description}
+      /> */}
     </div>
   ));
   return (

@@ -7,10 +7,11 @@ const initialCardData = atom({
     loading: false,
     items: [
       {
-        title: "Default Title",
-        description: ["Default Description"],
-        addItems: "",
+        description: "Default Description",
         value: "0",
+        options: [],
+        id: "",
+        qtd: 0,
       },
     ],
   },
@@ -27,7 +28,9 @@ export const valuesInitial = atom({
     loading: false,
     image: "",
     title: "",
-    descriptions: [],
+    description: "",
+    options: [],
+    value: "",
   },
 });
 

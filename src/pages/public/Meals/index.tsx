@@ -16,30 +16,30 @@ const Meals = () => {
       >
         Refeições
       </h1>
-      <CardsBurguers
+      {/* <CardsBurguers
         image={fejoada}
         value="35,00"
-        description={["Fejoada", "Pequena"]}
+        options={["Fejoada", "Pequena"]}
         title="Fejoada Pequena"
       />
       <CardsBurguers
         image={fejoada_media}
         value="65,00"
-        description={["Fejoada", "Media"]}
+        options={["Fejoada", "Media"]}
         title="Fejoada Media"
       />{" "}
       <CardsBurguers
         image={fejoada_grande}
         value="85,00"
-        description={["Fejoada", "Grande"]}
+        options={["Fejoada", "Grande"]}
         title="Fejoada Grande"
       />
       <CardsBurguers
         image={frango_parmejiana}
         value="25,90"
-        description={["Frango", "Parmejiana"]}
+        options={["Frango", "Parmejiana"]}
         title="Frango Parmejiana"
-      />
+      /> */}
     </div>
   );
 };

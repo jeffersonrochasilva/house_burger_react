@@ -13,12 +13,12 @@ const Shop = () => {
       >
         Chopp
       </h1>
-      <CardsBurguers
+      {/* <CardsBurguers
         value="10,00"
-        description={["shop heineken"]}
+        options={["shop heineken"]}
         image={shop}
         title="Shop Heineken"
-      />
+      /> */}
     </div>
   );
 };

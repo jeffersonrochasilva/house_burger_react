@@ -133,13 +133,13 @@ const Combos = () => {
 
   const list = data.map((item) => (
     <div key={item.id}>
-      <CardsBurguers
+      {/* <CardsBurguers
         value={item.value}
         image={item.image}
         title={item.title}
         item={item}
-        description={item.description}
-      />
+        options={item.description}
+      /> */}
     </div>
   ));
   return (
