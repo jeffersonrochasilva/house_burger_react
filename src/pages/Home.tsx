@@ -19,11 +19,11 @@ const Home = () => {
     >
       <Cards title="Promoções" route="promotions" />
       <Cards title="Combos" route="combos" />
-      <Cards title="Hamburger" route="hamburger" />
-      {/* <Cards title="Refeições" route="meals" />
-      <Cards title="Refrigerantes" route="refrigerator" />
-      <Cards title="Chopp" route="shop" />
-      <Cards title="Drinks" route="drinks" /> */}
+      <Cards title="Hamburger" route={`hamburger?query=burger`} />
+      {/* <Cards title="Refeições" route="meals" /> */}
+      {/* <Cards title="Refrigerantes" route="refrigerator" /> */}
+      <Cards title="Chopp" route="hamburger?query=chopp" />
+      {/* <Cards title="Drinks" route="drinks" /> */}
     </div>
   );
 };

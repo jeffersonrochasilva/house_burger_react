@@ -14,8 +14,11 @@ import texas_pepperone from "../assets/texas_pepperone.jpeg";
 import texas_smash from "../assets/texas_smash.jpeg";
 import texas_urso from "../assets/texas_urso.jpeg";
 
+// Chopp
+import shop from "../assets/shop/shop.jpeg";
+
 export const api = {
-  borger: [
+  burger: [
     {
       image: texas_bacon,
       title: "Texas bacon",
@@ -495,6 +498,15 @@ export const api = {
           title: "Molho",
         },
       ],
+    },
+  ],
+  chopp: [
+    {
+      image: shop,
+      title: "Texas bacon",
+      value: "24,90",
+      id: 1,
+      options: null,
     },
   ],
 };

@@ -1,5 +1,5 @@
 import { useSetRecoilState } from "recoil";
-
+import { useLocation } from "react-router-dom";
 import { api } from "../../../utils/api";
 
 // Components
@@ -10,6 +10,9 @@ import { values } from "../../../store/state";
 
 const Hamburger = () => {
   const setSelectItem = useSetRecoilState(values);
+  const { search } = useLocation();
+
+  const query = search?.split("=");
 
   const getItem = (item: any) => {
     setSelectItem((val: any) => ({
@@ -21,8 +24,8 @@ const Hamburger = () => {
       value: item.value,
     }));
   };
-
-  const listItem = api.borger.map((item) => {
+  //@ts-ignore
+  const listItem = api[query[1]].map((item: any) => {
     return (
       <div key={item.id}>
         <CardsBurguers
