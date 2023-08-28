@@ -1,6 +1,3 @@
-import React from "react";
-import { useRecoilState } from "recoil";
-import { countState } from "../store/state";
 // Style
 import "./Home.css";
 
@@ -8,7 +5,6 @@ import "./Home.css";
 import Cards from "../components/Commom/Cards";
 
 const Home = () => {
-  const [shoppingCart, setShoppingCart] = useRecoilState(countState);
   return (
     <div
       style={{
@@ -19,9 +15,9 @@ const Home = () => {
     >
       <Cards title="Promoções" route="promotions" />
       <Cards title="Combos" route="combos" />
-      <Cards title="Hamburger" route={`hamburger?query=burger`} />
+      <Cards title="Hamburger" route="hamburger?query=burger" />
       {/* <Cards title="Refeições" route="meals" /> */}
-      {/* <Cards title="Refrigerantes" route="refrigerator" /> */}
+      <Cards title="Refrigerantes" route="hamburger?query=refrigerat" />
       <Cards title="Chopp" route="hamburger?query=chopp" />
       {/* <Cards title="Drinks" route="drinks" /> */}
     </div>
