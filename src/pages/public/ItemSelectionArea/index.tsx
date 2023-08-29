@@ -3,12 +3,12 @@ import { useLocation } from "react-router-dom";
 import { api } from "../../../utils/api";
 
 // Components
-import { CardsBurguers } from "../../../components/Commom/CardsBurguers";
+import { CardSelect } from "../../../components/Commom/CardSelect";
 
 // Store
 import { values } from "../../../store/state";
 
-const Hamburger = () => {
+const ItemSelectionArea = () => {
   const setSelectItem = useSetRecoilState(values);
   const { search } = useLocation();
 
@@ -28,7 +28,7 @@ const Hamburger = () => {
   const listItem = api[query[1]].map((item: any) => {
     return (
       <div key={item.id}>
-        <CardsBurguers
+        <CardSelect
           onpress={getItem}
           item={item}
           Ingredients="Pão australiano, 2 hamburguer 150 gr, bacon, cheddar, mussarela, molho..."
@@ -44,4 +44,4 @@ const Hamburger = () => {
   );
 };
 
-export default Hamburger;
+export default ItemSelectionArea;

@@ -1,16 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 // style
-import "./logo.css";
+import { SmallerLogo, BiggerLogo, Container, Logos } from "./style";
+
 const Logo = () => {
   return (
-    <Link className="logoLink" to={"/"}>
-      <div className="logoContainer">
-        <div className="logo">
-          <p className="logoMaior">Templo</p>
-          <p className="logoMenor">Do Hambúrguer</p>
-        </div>
-      </div>
+    <Link style={{ textDecoration: "none" }} to={"/"}>
+      <Container>
+        <Logos>
+          <BiggerLogo>Templo</BiggerLogo>
+          <SmallerLogo>Do Hambúrguer</SmallerLogo>
+        </Logos>
+      </Container>
     </Link>
   );
 };

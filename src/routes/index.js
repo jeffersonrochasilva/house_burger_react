@@ -2,8 +2,7 @@
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 
-import Hamburger from "../pages/public/Hamburger";
-import Promotions from "../pages/public/Promotions";
+import ItemSelectionArea from "../pages/public/ItemSelectionArea";
 import SelectItem from "../pages/public/SelectItem";
 
 // Sub pages
@@ -25,15 +24,9 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: "hamburger",
-        element: <Hamburger />,
+        path: "itemselectionarea",
+        element: <ItemSelectionArea />,
       },
-
-      {
-        path: "promotions",
-        element: <Promotions />,
-      },
-
       {
         path: "selectItem",
         element: <SelectItem />,

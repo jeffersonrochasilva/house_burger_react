@@ -1,38 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // Style
-import "./header.css";
+import { Container, Content, Title, ItemsBox, Span } from "./style";
 
 // Icons
-import { FaBars, FaSistrix } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 const Header = () => {
   return (
-    <div className="header">
-      <div className="content">
+    <Container>
+      <Content>
         <FaBars />
-        <Link className="headerLink" to="/">
-          <p className="headerTitle">Cardapio</p>
+        <Link
+          style={{
+            textDecoration: "none",
+            padding: 0,
+            marginTop: 15,
+          }}
+          to="/"
+        >
+          <Title>Cardapio</Title>
         </Link>
-      </div>
-      {/* <FaSistrix /> */}
+      </Content>
       <div>
         <AiOutlineShoppingCart
           style={{
             fontSize: 25,
           }}
         />
-        <div className="itemsInBox">
-          <span
-            style={{
-              fontSize: 10,
-            }}
-          >
-            2
-          </span>
-        </div>
+        <ItemsBox>
+          <Span>2</Span>
+        </ItemsBox>
       </div>
-    </div>
+    </Container>
   );
 };
 

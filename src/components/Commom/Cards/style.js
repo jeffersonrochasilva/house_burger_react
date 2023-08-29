@@ -1,4 +1,6 @@
-.container {
+import { styled } from "styled-components";
+
+const Container = styled.div`
   width: 300px;
   height: 150px;
   border-radius: 8px;
@@ -7,15 +9,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.title {
-  color: #303030;
-  font-family: sans-serif;
-  font-weight: 400;
-}
-.cardLink {
+`;
+
+const Link = styled.a`
   text-decoration: none;
   margin-bottom: 20px;
   width: 300px;
   height: 150px;
-}
+`;
+
+const Title = styled.p`
+  color: black;
+`;
+
+export { Container, Link, Title };

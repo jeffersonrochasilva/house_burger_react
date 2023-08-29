@@ -1,4 +1,4 @@
-import "./cardsBurgues.css";
+// Router Dom
 import { Link } from "react-router-dom";
 
 // Style
@@ -17,7 +17,7 @@ interface IProps {
   onpress?: any;
 }
 
-const CardsBurguers = ({ item, Ingredients, onpress }: IProps) => {
+const CardSelect = ({ item, Ingredients, onpress }: IProps) => {
   return (
     <Link to={"/selectItem"} onClick={() => onpress(item)}>
       <Container>
@@ -32,4 +32,4 @@ const CardsBurguers = ({ item, Ingredients, onpress }: IProps) => {
   );
 };
 
-export { CardsBurguers };
+export { CardSelect };

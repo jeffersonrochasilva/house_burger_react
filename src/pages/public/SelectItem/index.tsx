@@ -1,5 +1,14 @@
 /* eslint-disable jsx-a11y/alt-text */
-import "./selectItem.css";
+
+// Style
+import {
+  Itempage,
+  Container,
+  Image,
+  Description,
+  Textarea,
+  Button,
+} from "./style";
 
 // State
 import { useRecoilState } from "recoil";
@@ -18,16 +27,16 @@ const SelectItem = () => {
   };
 
   return (
-    <div className="selectItempage">
-      <div className="selectContainer">
-        <img className="selectImg" src={value?.image} />
+    <Itempage>
+      <Container>
+        <Image src={value?.image} />
         <h1>{value?.title}</h1>
 
         {value?.options.length ? (
           <span>
             {value?.options &&
               value?.options.map((item: any) => (
-                <div className="selectDescription" key={item.id}>
+                <Description key={item.id}>
                   <span>{item.title}</span>
                   <input
                     value={item.id}
@@ -35,23 +44,20 @@ const SelectItem = () => {
                     type="checkbox"
                     color="red"
                   />
-                </div>
+                </Description>
               ))}
           </span>
         ) : null}
-      </div>
-      <textarea
-        className="selectTextArea"
+      </Container>
+      <Textarea
         placeholder="Digite sua observação"
         value={value?.description}
         onChange={(description) =>
           setValue((val: any) => ({ ...val, description }))
         }
       />
-      <button className="buttonSelectItem" onClick={getItem}>
-        ADICIONAR
-      </button>
-    </div>
+      <Button onClick={getItem}>ADICIONAR</Button>
+    </Itempage>
   );
 };
 export default SelectItem;
