@@ -39,7 +39,6 @@ const Hamburger = () => {
 
   return (
     <div>
-      <h1>Hambúrguers</h1>
       <div>{listItem}</div>
     </div>
   );

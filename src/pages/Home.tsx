@@ -1,26 +1,19 @@
 // Style
-import "./Home.css";
-
+import { Container } from "./style";
 // Components
 import Cards from "../components/Commom/Cards";
 
 const Home = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "space-around",
-      }}
-    >
+    <Container>
       <Cards title="Promoções" route="promotions" />
-      <Cards title="Combos" route="combos" />
+      <Cards title="Combos" route="hamburger?query=combos" />
       <Cards title="Hamburger" route="hamburger?query=burger" />
-      {/* <Cards title="Refeições" route="meals" /> */}
+      <Cards title="Refeições" route="hamburger?query=meals" />
       <Cards title="Refrigerantes" route="hamburger?query=refrigerat" />
       <Cards title="Chopp" route="hamburger?query=chopp" />
-      {/* <Cards title="Drinks" route="drinks" /> */}
-    </div>
+      <Cards title="Drinks" route="hamburger?query=drinks" />
+    </Container>
   );
 };
 

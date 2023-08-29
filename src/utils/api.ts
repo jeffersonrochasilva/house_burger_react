@@ -16,8 +16,33 @@ import texas_pepperone from "../assets/texas_pepperone.jpeg";
 import texas_smash from "../assets/texas_smash.jpeg";
 import texas_urso from "../assets/texas_urso.jpeg";
 
+// Combo
+import combo_texas_bacon from "../assets/combos/combo_texas_bacon.jpeg";
+import combo_texas_bacon3 from "../assets/combos/combo_texas_bacon3.jpeg";
+import combo_texas_bravo from "../assets/combos/combo_texas_bravo.jpeg";
+import combo_texas_burguer from "../assets/combos/combo_texas_burguer.jpeg";
+import combo_texas_cheddar3 from "../assets/combos/combo_texas_cheddar3.jpeg";
+import combo_texas_gril from "../assets/combos/combo_texas_gril.jpeg";
+import combo_texas_gurmet from "../assets/combos/combo_texas_gurmet.jpeg";
+import combo_texas_junior from "../assets/combos/combo_texas_junior.jpeg";
+import combo_texas_urso from "../assets/combos/combo_texas_urso.jpeg";
+import combo_texas_urso3 from "../assets/combos/combo_texas_urso3.jpeg";
+
+// Image
+import fejoada from "../assets/refeicoes/fejoada2.jpg";
+import fejoada_media from "../assets/refeicoes/feijoada_media.jpg";
+import fejoada_grande from "../assets/refeicoes/fejoada_grande.webp";
+import frango_parmejiana from "../assets/refeicoes/frango_parmejiana.png";
+
 // Chopp
 import shop from "../assets/shop/shop.jpeg";
+
+// drinks
+import caipirinha_de_limao from "../assets/drinks/caipirinha-de-limao.jpg";
+import drink_gin from "../assets/drinks/drink_gin.jpg";
+import drink_maracuja from "../assets/drinks/drink_maracuja.jpg";
+import drink_azul from "../assets/drinks/drink-lagoa-azul.webp";
+import drink_morango from "../assets/drinks/drinks-de-morango.webp";
 
 // Refrigerant
 
@@ -549,14 +574,24 @@ export const api = {
       value: "24,90",
       description: "",
       id: 1,
-      options: null,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
     },
   ],
   refrigerat: [
     {
       image: coca_zero,
       title: "Coca Zero",
-      options: null,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
       description: "350 ml",
       value: "4,50",
       id: 1,
@@ -566,6 +601,12 @@ export const api = {
       title: "Coca Cola",
       description: "280 ml",
       value: "3,20",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
       id: 2,
     },
     {
@@ -574,6 +615,12 @@ export const api = {
       description: "280 ml",
       value: "3,50",
       id: 3,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
     },
     {
       image: fanta_uva,
@@ -581,6 +628,12 @@ export const api = {
       description: "280 ml",
       value: "3,50",
       id: 4,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
     },
     {
       image: guarana_jesus,
@@ -588,6 +641,12 @@ export const api = {
       description: "280 ml",
       value: "3,50",
       id: 5,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
     },
     {
       image: pepsi_zero,
@@ -595,6 +654,12 @@ export const api = {
       description: "350 ml",
       value: "4,555",
       id: 6,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
     },
     {
       image: pepsi,
@@ -602,6 +667,342 @@ export const api = {
       description: "350 ml",
       value: "4,00",
       id: 7,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+    },
+  ],
+  combos: [
+    {
+      image: combo_texas_bacon,
+      title: "Combo Texas Bacon - Lanche + Batata P + Refrigerante P",
+      value: "30,90",
+      id: 1,
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_bravo,
+      title: "Combo Texas Bravo - Lanche + Batata P + Refrigerante P",
+      value: "27,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 3,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_burguer,
+      title: "Combo Texas Burguer - Lanche + Batata P + Refrigerante P",
+      value: "29,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 4,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_cheddar3,
+      title: "Combo Texas Burguer - Lanche + Batata P + Refrigerante P",
+      value: "29,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 5,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_gril,
+      title: "Combo Texas Grill - Lanche + Batata P + Refrigerante P",
+      value: "31,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 6,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_gurmet,
+      title: "Combo Texas Gourmet - Lanche + Batata P + Refrigerante P",
+      value: "28,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 7,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_junior,
+      title: "Combo Texas Gourmet - Lanche + Batata P + Refrigerante P",
+      value: "28,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 8,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_urso,
+      title: "Combo Texas Gourmet - Lanche + Batata P + Refrigerante P",
+      value: "28,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 9,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: combo_texas_urso3,
+      title: "Combo Texas Gourmet - Lanche + Batata P + Refrigerante P",
+      value: "28,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 10,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+  ],
+  meals: [
+    {
+      image: fejoada,
+      title: "Fejoda tradicional",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 1,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: fejoada_media,
+      title: "Fejoada Tradicinal Média",
+      value: "27,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 3,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: fejoada_grande,
+      title: "Fejoada tradicional Grande",
+      value: "29,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 4,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: frango_parmejiana,
+      title: "Frango a parmegiana",
+      value: "29,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 5,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+  ],
+  drinks: [
+    {
+      image: caipirinha_de_limao,
+      title: "Caipirinha de limão",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 1,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: drink_gin,
+      title: "drink de gin ",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 2,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: drink_azul,
+      title: "drink de gin azul",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 3,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: drink_maracuja,
+      title: "Caipirinha de maracujá",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 4,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
+    },
+    {
+      image: drink_morango,
+      title: "Caipirinha de morango",
+      value: "30,90",
+      options: [
+        {
+          id: 1,
+          title: "Pão australiano",
+        },
+      ],
+      id: 5,
+      description: [
+        "Texas bacon",
+        "Texas bacon",
+        "batata p",
+        "refrigerante 220ml",
+      ],
     },
   ],
 };

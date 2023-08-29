@@ -8,6 +8,15 @@ import { values } from "../../../store/state";
 const SelectItem = () => {
   const [value, setValue] = useRecoilState(values);
 
+  const getItem = () => {
+    const obj = {
+      title: value?.title,
+      options: value?.options,
+      description: value?.description,
+    };
+    console.log("obj", obj);
+  };
+
   return (
     <div className="selectItempage">
       <div className="selectContainer">
@@ -39,7 +48,9 @@ const SelectItem = () => {
           setValue((val: any) => ({ ...val, description }))
         }
       />
-      <button className="buttonSelectItem">ADICIONAR</button>
+      <button className="buttonSelectItem" onClick={getItem}>
+        ADICIONAR
+      </button>
     </div>
   );
 };
