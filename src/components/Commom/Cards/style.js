@@ -5,6 +5,7 @@ const Container = styled.div`
   height: 150px;
   border-radius: 8px;
   background: #cdcdcd;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;

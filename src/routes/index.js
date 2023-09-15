@@ -1,4 +1,7 @@
-// Pages
+// Private Pages
+import UserInitial from "../pages/private/UserInitial";
+
+// Public Pages
 import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 
@@ -32,6 +35,10 @@ const router = createBrowserRouter([
         element: <SelectItem />,
       },
     ],
+  },
+  {
+    path: "userInitial",
+    element: <UserInitial />,
   },
 ]);
 

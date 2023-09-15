@@ -1,10 +1,12 @@
 import { RecoilRoot } from "recoil";
 import "./App.css";
+// import { MagicSquare } from "./styles/components";
 
-// reaproveitamento de estrutura
 import { Outlet } from "react-router-dom";
+
 import Header from "./components/Commom/Header";
 import Logo from "./components/Commom/Logo";
+
 function App() {
   return (
     <RecoilRoot>
@@ -12,6 +14,7 @@ function App() {
         <Header />
         <Logo />
         <Outlet />
+        {/* <MagicSquare squareSize={{ md: 200, sm: 100 }} /> */}
       </div>
     </RecoilRoot>
   );

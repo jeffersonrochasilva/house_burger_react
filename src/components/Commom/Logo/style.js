@@ -15,7 +15,7 @@ const Logos = styled.div`
   align-items: center;
   justify-content: center;
   background-color: black;
-  margin: 30px;
+  margin: 10px;
 `;
 
 const BiggerLogo = styled.p`

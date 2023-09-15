@@ -24,7 +24,7 @@ const Title = styled.p`
 `;
 
 const ItemsBox = styled.div`
-  background-color: red;
+  /* background-color: red; */
   border-radius: 100px;
   width: 10px;
   height: 10px;

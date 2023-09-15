@@ -1,9 +1,13 @@
 .navbarContainer {
-  background-color: red;
-  height: 60px;
-  align-items: center;
+  background: linear-gradient(to right, #80002a, #a50034);
+  width: 260px;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+
 }
 .togo {
-  color: white;
   text-decoration: none;
+  color: white;
 }
